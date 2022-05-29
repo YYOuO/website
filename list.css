@@ -1,0 +1,14 @@
+table {
+    border: 2px dashed purple;
+    border-radius: 20px;
+}
+
+th {
+    border: 2px groove goldenrod;
+    border-radius: 5px;
+}
+
+td {
+    border: 2px dotted palevioletred;
+    border-radius: 5px;
+}

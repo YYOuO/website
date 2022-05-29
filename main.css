@@ -1,0 +1,84 @@
+html {
+    background-color: #6cde64;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #4283d2;
+    padding: 20px;
+}
+
+code {
+    background-color: lightblue;
+}
+
+.fixed {
+    font-size: x-small;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 500px;
+    background-color: lightblue;
+    border: 3px solid white;
+}
+
+#venti {
+    transition: width 5s;
+}
+
+#venti:hover {
+    transform: scale(1.2);
+    width: 500px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    background: white;
+}
+
+.left {
+    float: left;
+    width: 75%;
+}
+
+
+.right {
+    height: auto;
+    margin-top: 20px;
+    float: left;
+    width: 25%;
+    border: 3px solid yellow;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.cc {
+    background-color: rgb(176, 77, 233);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+.ccc:hover {
+    color: #f2f2f2;
+    background-color: darkgoldenrod;
+    border-radius: 20px;
+    scale: 1.3;
+}
+
+.ccc {
+    font-size: xx-small;
+    border: 3px double lightgreen;
+    border-radius: 20px;
+    padding: right 50px;
+    transition: scale .2s;
+}

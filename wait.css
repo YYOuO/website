@@ -1,0 +1,58 @@
+p {
+    color: darkorchid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 50;
+}
+
+body {
+    background-image: url('https://media.discordapp.net/attachments/916177621874769970/964908838237130792/SPOILER_20220416_230021_AdobeCreativeCloudExpress2.gif');
+    opacity: 0.9;
+}
+
+@keyframes uudd {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    25% {
+        transform: translate(0px, -100px);
+    }
+
+    75% {
+        transform: translate(0px, 350px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes llrr {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    25% {
+        transform: translate(-500px, 0px);
+    }
+
+    75% {
+        transform: translate(500px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+#uudd {
+    animation-name: uudd;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+#llrr {
+    animation-name: llrr;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}

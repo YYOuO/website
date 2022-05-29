@@ -1,0 +1,21 @@
+body {
+    border-radius: 20px;
+    border: 3px solid red;
+    text-align: center;
+    width: 650px;
+    height: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url('kazuha4.jpeg');
+    background-size: 700px;
+
+}
+
+html {
+    background-color: rgb(26, 195, 184);
+}
+
+span {
+    font-size: large;
+    color: blueviolet;
+}

@@ -1,0 +1,48 @@
+div {
+    color: rgb(121, 169, 246);
+    background-color: black;
+    margin-top: 200px;
+    display: block;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    opacity: 65%;
+    padding: 20px;
+}
+
+body {
+    background-image: url('https://images7.alphacoders.com/112/thumb-1920-1129597.jpg');
+    background-size: cover;
+    width: 700px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+}
+
+input {
+    margin: 3px;
+    border-radius: 20px;
+    width: 100px;
+    border: 3px solid greenyellow;
+    transition: width .2s;
+}
+
+input:hover {
+    width: 150px;
+
+}
+
+span {
+    color: orangered;
+}
+
+button {
+    font-size: small;
+    color: blueviolet;
+    width: 150px;
+    border-radius: 20px;
+    transition: width .2s;
+}
+
+button:hover {
+    background-color: lightblue;
+    width: 100px;
+}
