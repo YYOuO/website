@@ -1,6 +1,9 @@
 <?php
+session_start();
 $username = $_POST['username'];
 $password = $_POST['password'];
+$_SESSION["username"] = $username;
+$_SESSION["password"] = $password;
 require_once 'connect.php';
 ?>
 <!DOCTYPE html>
@@ -26,6 +29,7 @@ require_once 'connect.php';
     </div>
     <?php
     echo '</br>';
+    echo $_SESSION["username"] . '</br>';
     echo '想不到吧' . '<br />';
     echo '登入時間：' . date('Y-m-d H:i:s');
     echo '</br>';

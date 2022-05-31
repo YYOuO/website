@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -21,14 +24,23 @@
                 style="width:50px;display:none;position:fixed;right:1px ;top:1px;" id="x"></a>
     </div>
     <div class="cc">
-        <a href="change.html" class="ccc">change password </a>
-        <a href="delete.php" class="ccc" ">delete account</a>
+        <?php
+        if (!$_SESSION["username"]) {
+            header('location:index.html');
+        } else {
+            echo 'welcome!  ' ?><span style="color:yellow;border:2px double white">
+            <?php echo $_SESSION["username"]; ?></span>
+        <?php
+        } ?>
+        <button onclick="javascript:window.location.href='change.html'" class="ccc">change password</button>
+        <button onclick="javascript:window.location.href='delete.php'" class="ccc">delete account</button>
+        <button class="ccc" onclick=" javascript:window.location.href='a.php' ;">logout</button>
     </div>
     <div class=" header" style="background:none">
-            <a href="main.php"><img src="1651049036628.jpg" width="100px" height="100px"
-                    style="display: flex; float:left" id="venti"></a>
+        <a href="main.php"><img src="1651049036628.jpg" width="100px" height="100px" style="display: flex; float:left"
+                id="venti"></a>
 
-            <h1 style="text-align: center; padding:0px; float:none ;"> Just a website</h1>
+        <h1 style="text-align: center; padding:0px; float:none ;"> Just a website</h1>
     </div>
 
     <div class="left">
@@ -245,6 +257,11 @@
         <a href="https://sg-public-api.hoyoverse.com/event/download_porter/link/ys_global/genshinimpactpc/default"><img
                 src="genshinimpact.webp" width="50px"></a>
 
+    </div>
+    <div class="right">
+        <?php
+        require_once 'bad.php';
+        ?>
     </div>
     <div class="right">
         <img src="akaya.png" width="75px" height="75px" style="float: left;" onclick="javascript:bgm.pause();">
