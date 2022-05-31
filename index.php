@@ -1,3 +1,9 @@
+<?php
+session_start();
+if ($_SESSION["username"]) {
+    header('location:main.php');
+}
+?>
 <!DOCTYPE html>
 <html>
 

@@ -2,8 +2,6 @@
 session_start();
 $username = $_POST['username'];
 $password = $_POST['password'];
-$_SESSION["username"] = $username;
-$_SESSION["password"] = $password;
 require_once 'connect.php';
 ?>
 <!DOCTYPE html>
@@ -45,6 +43,7 @@ require_once 'connect.php';
             if (mysqli_num_rows($result) > 0) {
                 $result = mysqli_query($connect, $check);
                 if (mysqli_num_rows($result)) {
+                    $_SESSION["username"] = $username;
                     echo '密碼正確</br>';
                     if (mysqli_query($connect, $input)) {
                         echo '登入資料儲存成功！</br>';

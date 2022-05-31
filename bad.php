@@ -17,7 +17,7 @@ if ($result) {
 <table style="width:100%;">
     <tr>
         <th>No.</th>
-        <th>壞人</th>
+        <th>bad</th>
         <th>孤兒</th>
     </tr>
     <?php

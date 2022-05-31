@@ -26,10 +26,10 @@ session_start();
     <div class="cc">
         <?php
         if (!$_SESSION["username"]) {
-            header('location:index.html');
+            header('location:index.php');
         } else {
-            echo 'welcome!  ' ?><span style="color:yellow;border:2px double white">
-            <?php echo $_SESSION["username"]; ?></span>
+            echo 'welcome!  ' ?><a style="color:yellow;border:2px double white"
+            href="hi.php?id=<?php echo $_SESSION["username"]; ?>"><?php echo $_SESSION["username"]; ?></a>
         <?php
         } ?>
         <button onclick="javascript:window.location.href='change.html'" class="ccc">change password</button>
@@ -85,7 +85,7 @@ session_start();
         <h3 id="install">前置作業 (以renoir為例)(我也只有這一台🥲)</h3>
         <p id="miflash">安裝miflash <a href="https://xiaomirom.com/download-xiaomi-flash-tool-miflash/"
                 target="_blank">連結</a></p>
-        <p id="twrp">(在手機上安裝)twrp <a href="https://twrp.me/Devices/">連結</a>
+        <p id="twrp">(在手機上安裝)twrp(❗❗❗<a href="#bootloader">請先解鎖bl</a>) <a href="https://twrp.me/Devices/">連結</a>
         <ol>
             <li>在官網找到你的手機型號(如果沒有請左轉xda看有沒有大佬幫你做</li>
             <li>進入fastboot模式(音量下鍵+電源鍵)或者可以打<code>adb reboot bootloader</code></li>
@@ -270,12 +270,8 @@ session_start();
         <ul>
             <li><a href="https://www.facebook.com/profile.php?id=100011642190094">Facebook</a></li>
             <li><a href="https://www.instagram.com/tusikuan/">Instagram</a></li>
-            <li><a href="https://github.com/YYOuO/resources">github</a></li>
             <li><a
                     href="https://docs.google.com/document/d/16wPszQsl9RrTEVyVXsAODV_18MTQ8Tde/edit?usp=sharing&ouid=103519410945927565913&rtpof=true&sd=true">心得在這</a>
-            </li>
-            <li><a
-                    href="https://docs.google.com/document/d/1hZDvBp1q_ayX9y13x3PMeBoh89t4mQHl/edit?usp=sharing&ouid=103519410945927565913&rtpof=true&sd=true">網頁報告底家</a>
             </li>
         </ul>
         <p>MiHoYo是我大哥</p>

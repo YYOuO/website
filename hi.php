@@ -17,7 +17,7 @@
     <h1><?php echo $username; ?></h1>
     <p>這是他的登入資料(最近10筆)</p>
     <p>順便告訴你他的密碼</p>
-    <p>但是現在技術有點出了問題所以晚點再說</p>
+    <p>他長這樣↓↓</p>
     <?php
     $pwd = "SELECT `password` FROM  `account` WHERE username='{$username}'";
     $result2 = mysqli_query($connect, $pwd);

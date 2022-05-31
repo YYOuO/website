@@ -8,6 +8,7 @@ $bad = "INSERT INTO `bad` (`badguy`,`killed`) VALUES ('{$_SESSION["username"]}',
 mysqli_query($connect, $bad);
 if ($_SESSION["username"] == $username) {
     require_once 'a.php';
+} else {
+    header('location:delete.php');
 }
-header('location:delete.php');
 // header('Refresh:3;url=main.php');
