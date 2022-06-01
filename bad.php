@@ -2,7 +2,7 @@
 <?php
 echo '就有人想把你刪掉</br>';
 require_once 'connect.php';
-$form = "SELECT `badguy`,`killed` FROM  `bad` LIMIT 10";
+$form = "SELECT `badguy`,`killed`,`time` FROM  `bad` ORDER BY `time` DESC LIMIT 10";
 $result = mysqli_query($connect, $form);
 $answer = array();
 if ($result) {
